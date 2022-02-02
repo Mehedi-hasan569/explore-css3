@@ -9,38 +9,37 @@
     <style>
         @keyframes sliding {
             from {
-                background-color: lightgreen);
+                background-color: cornflowerblue;
             }
 
             to {
-                background-color: rgb(98, 9, 150);
+                background-color: springgreen;
             }
 
         }
 
         .stage {
-            width: 500px;
-            height: 300px;
-            background-color: lightskyblue;
+            height: 400px;
+            width: 300px;
+            background-color: cornflowerblue;
         }
 
         .ball {
-            height: 100px;
-            width: 100px;
-            background-color: lightgreen;
-            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            background-color: crimson;
+            border-radius: 40px;
             position: relative;
-            animation: sliding 1s ease-in-out 0.5s 5 alternet fill-mode;
+            animation: sliding 1s ease-in-out 1s infinite alternate normal;
             animation-play-state: running;
+
         }
     </style>
 </head>
 
 <body>
-    <h1>Exploring my new animation</h1>
     <div class="stage">
-        <div class="ball">
-        </div>
+        <div class="ball"></div>
     </div>
 
 </body>
