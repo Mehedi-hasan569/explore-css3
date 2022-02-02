@@ -5,36 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amimation</title>
+    <title>animation 2 </title>
     <style>
         @keyframes sliding {
             from {
-                background-color: cornflowerblue;
+                background-color: cyan;
                 left: 0;
             }
 
             to {
-                background-color: springgreen;
+                background-color: darkblue;
                 left: 300px;
             }
-
         }
 
         .stage {
             height: 400px;
-            width: 300px;
-            background-color: cornflowerblue;
+            width: 400px;
+            background-color: cornsilk;
         }
 
         .ball {
             height: 50px;
             width: 50px;
-            background-color: crimson;
-            border-radius: 40px;
-
-            animation: sliding 1s ease-in-out 0.5s 3 alternate normal;
-            animation-play-state: running;
+            background-color: cyan;
+            border-radius: 25px;
             position: relative;
+            animation: sliding 1s ease-in-out infinite 5 alternate fill-mode;
+            animation-play-state: running;
 
         }
     </style>
@@ -44,7 +42,6 @@
     <div class="stage">
         <div class="ball"></div>
     </div>
-
 </body>
 
 </html>
